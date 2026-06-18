@@ -76,8 +76,8 @@ p{margin:0 0 1.1em}
 .hero .sub-2{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--gold-soft);margin-bottom:.4em}
 .hero .micro{font-size:.95rem;color:rgba(255,255,255,.78);max-width:520px;margin:0 auto 2.2em}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.scroll-cue{position:absolute;bottom:104px;left:50%;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.7);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
-.scroll-cue span{width:1px;height:40px;background:linear-gradient(rgba(255,255,255,.7),transparent);animation:cue 2s infinite}
+.scroll-cue{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.55);font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:6px}
+.scroll-cue span{width:1px;height:26px;background:linear-gradient(rgba(255,255,255,.6),transparent);animation:cue 2s infinite}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 .phero{position:relative;padding:190px 24px 110px;text-align:center;color:#fff;overflow:hidden;background:linear-gradient(180deg,#3a5a64,#2c4e59 60%,#26454f)}
 .phero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:64px;background:var(--cream);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 64' preserveAspectRatio='none'%3E%3Cpath d='M0 64 L0 30 Q60 22 120 32 T240 30 T360 36 T480 26 T600 36 T720 26 T840 36 T960 28 T1080 36 T1200 30 L1200 64 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 64' preserveAspectRatio='none'%3E%3Cpath d='M0 64 L0 30 Q60 22 120 32 T240 30 T360 36 T480 26 T600 36 T720 26 T840 36 T960 28 T1080 36 T1200 30 L1200 64 Z'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
@@ -239,6 +239,7 @@ ul.craving li::before{content:"";position:absolute;left:0;top:1.05em;width:18px;
   .arche-grid,.founders,.contact-grid,.includes{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr;gap:32px}.figure{min-height:340px}
 }
+@media(max-height:760px){.scroll-cue{display:none}}
 @media(max-width:560px){
   body{font-size:16px}.footer-grid{grid-template-columns:1fr}
   .car-track .vcard{flex:0 0 84%}.hero{padding-top:120px}.car-btn{display:none}
